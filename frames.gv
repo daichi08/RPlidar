@@ -1,2 +1,9 @@
 digraph G {
-"no tf data recieved"}
+"base_link" -> "laser"[label="Broadcaster: /link1_broadcaster\nAverage rate: 10.139 Hz\nMost recent transform: 1528355209.214 ( -0.067 sec old)\nBuffer length: 4.932 sec\n"];
+"map" -> "base_link"[label="Broadcaster: /hector_height_mapping\nAverage rate: 12.652 Hz\nMost recent transform: 1528355208.926 ( 0.221 sec old)\nBuffer length: 5.216 sec\n"];
+"map" -> "scanmatcher_frame"[label="Broadcaster: /hector_height_mapping\nAverage rate: 12.652 Hz\nMost recent transform: 1528355208.926 ( 0.221 sec old)\nBuffer length: 5.216 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1528355209.147"[ shape=plaintext ] ;
+ }->"map";
+}

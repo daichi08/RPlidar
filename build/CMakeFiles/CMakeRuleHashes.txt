@@ -6,6 +6,9 @@
 5c837a7262a07607ecd382013ee19b8f /home/daichi/catkin_ws/devel/include/hector_nav_msgs/GetRecoveryInfo.h
 afb74271ca0e36e4584d4418ef7d3581 /home/daichi/catkin_ws/devel/include/hector_nav_msgs/GetRobotTrajectory.h
 386dc9ddcab47cfd076b107e60a8acb1 /home/daichi/catkin_ws/devel/include/hector_nav_msgs/GetSearchPosition.h
+6a51d1e57df59372cc3bbdca43d46304 /home/daichi/catkin_ws/devel/include/obstacle_detector/CircleObstacle.h
+16ec199f683dfce81ece3ded54c97e2a /home/daichi/catkin_ws/devel/include/obstacle_detector/Obstacles.h
+49e81dfa653c4267c0a08cedb97b3c80 /home/daichi/catkin_ws/devel/include/obstacle_detector/SegmentObstacle.h
 2821c4b4d2c6e3ebb3a36dc9a2d3afea /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/hector_mapping/msg/_HectorDebugInfo.py
 c9f5ff3f5f8356ca9d56de05e2e0b7e7 /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/hector_mapping/msg/_HectorIterData.py
 321fecb3a9bcefc7a0abf80caf1672dd /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/hector_mapping/msg/__init__.py
@@ -15,6 +18,10 @@ ff5912ed76816e5a2152af561a33b7d1 /home/daichi/catkin_ws/devel/lib/python2.7/dist
 835b5b5e5caf8f68d7d46cc821aa53fc /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/hector_nav_msgs/srv/_GetRobotTrajectory.py
 a22bcb28cb0b61f56503f28263f40165 /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/hector_nav_msgs/srv/_GetSearchPosition.py
 f9f1377c16a4684d6f80d9309ff7cd54 /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/hector_nav_msgs/srv/__init__.py
+2df8c24449e8299906f2ded2e667d637 /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/obstacle_detector/msg/_CircleObstacle.py
+c0a246e1097eacf252b56461ef6282ea /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/obstacle_detector/msg/_Obstacles.py
+a5b0b88c6774cdd6c005b7aa44b778cf /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/obstacle_detector/msg/_SegmentObstacle.py
+8f8d0ce1bfd61b87f8d472b7ab61d694 /home/daichi/catkin_ws/devel/lib/python2.7/dist-packages/obstacle_detector/msg/__init__.py
 528cbfe518aa2fc8c2ff571ccfd05d23 /home/daichi/catkin_ws/devel/share/common-lisp/ros/hector_mapping/msg/HectorDebugInfo.lisp
 360ae89c3d77102b2de9814b152cb216 /home/daichi/catkin_ws/devel/share/common-lisp/ros/hector_mapping/msg/HectorIterData.lisp
 8d5f17555a2d9f451a8bcd319f22add3 /home/daichi/catkin_ws/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetDistanceToObstacle.lisp
@@ -22,6 +29,9 @@ f9f1377c16a4684d6f80d9309ff7cd54 /home/daichi/catkin_ws/devel/lib/python2.7/dist
 2129012414cbb8a28a685d373d20c5d9 /home/daichi/catkin_ws/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetRecoveryInfo.lisp
 506c6676e21c1ff4e78cb352069d09c0 /home/daichi/catkin_ws/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetRobotTrajectory.lisp
 5a801f681f794c40dccb29fa888d758d /home/daichi/catkin_ws/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetSearchPosition.lisp
+50c2ec4bdc5cf48f04b38e57b77d72be /home/daichi/catkin_ws/devel/share/common-lisp/ros/obstacle_detector/msg/CircleObstacle.lisp
+c96e24ba1fff24edc13028a98ed046e4 /home/daichi/catkin_ws/devel/share/common-lisp/ros/obstacle_detector/msg/Obstacles.lisp
+c7ec937c6404c2c56a171ef359bfbf58 /home/daichi/catkin_ws/devel/share/common-lisp/ros/obstacle_detector/msg/SegmentObstacle.lisp
 258f4b33922fe4b954c6568a0d9dca89 /home/daichi/catkin_ws/devel/share/gennodejs/ros/hector_mapping/msg/HectorDebugInfo.js
 919b76964318b6009df5555b06b92897 /home/daichi/catkin_ws/devel/share/gennodejs/ros/hector_mapping/msg/HectorIterData.js
 f42d1c5853d209f474bd8280741bb636 /home/daichi/catkin_ws/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetDistanceToObstacle.js
@@ -29,6 +39,9 @@ f42d1c5853d209f474bd8280741bb636 /home/daichi/catkin_ws/devel/share/gennodejs/ro
 48c13a5590506f73b8dad0398acac106 /home/daichi/catkin_ws/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetRecoveryInfo.js
 5e57ae9ba7a7b328a9cda25b801e2a1f /home/daichi/catkin_ws/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetRobotTrajectory.js
 74bbf989660a75983802e4629aec09c1 /home/daichi/catkin_ws/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetSearchPosition.js
+89e288decccfe199d20c8d754e8e1880 /home/daichi/catkin_ws/devel/share/gennodejs/ros/obstacle_detector/msg/CircleObstacle.js
+a05771d7360049e6af08d754489968ec /home/daichi/catkin_ws/devel/share/gennodejs/ros/obstacle_detector/msg/Obstacles.js
+a76a6776b8524b3d07467eedf999faec /home/daichi/catkin_ws/devel/share/gennodejs/ros/obstacle_detector/msg/SegmentObstacle.js
 52d918898f10d593a93be3877c45c6ab /home/daichi/catkin_ws/devel/share/roseus/ros/hector_mapping/manifest.l
 3415b7ad20b430753a38594d213b1002 /home/daichi/catkin_ws/devel/share/roseus/ros/hector_mapping/msg/HectorDebugInfo.l
 0b827ef20f79d1d5fb546e6528fe542a /home/daichi/catkin_ws/devel/share/roseus/ros/hector_mapping/msg/HectorIterData.l
@@ -38,6 +51,10 @@ e74fcbbf526bc5f2a7d698a7b6ad8591 /home/daichi/catkin_ws/devel/share/roseus/ros/h
 801528885c5d9699866d673c6a41cee4 /home/daichi/catkin_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetRecoveryInfo.l
 dea586697c28f70735bbbfa91fca3bb9 /home/daichi/catkin_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetRobotTrajectory.l
 8b2742cb92eae469e10793fa21272707 /home/daichi/catkin_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetSearchPosition.l
+1e286b53953520842adcae7b077e6ccf /home/daichi/catkin_ws/devel/share/roseus/ros/obstacle_detector/manifest.l
+af9b0b14a64c1917556b34cb99faaeb9 /home/daichi/catkin_ws/devel/share/roseus/ros/obstacle_detector/msg/CircleObstacle.l
+f558efd9df98566e43c8b278e5d68d84 /home/daichi/catkin_ws/devel/share/roseus/ros/obstacle_detector/msg/Obstacles.l
+9a10b5c417ce5183454c20fda6f3aa0a /home/daichi/catkin_ws/devel/share/roseus/ros/obstacle_detector/msg/SegmentObstacle.l
 b5ace8cdff6ef76b1ec6bebcd38be934 CMakeFiles/clean_test_results
 00d5bb9aafa8e5d9855c94873707561e hector_slam/hector_mapping/CMakeFiles/_hector_mapping_generate_messages_check_deps_HectorDebugInfo
 8894a06603882957418640b1d7454425 hector_slam/hector_mapping/CMakeFiles/_hector_mapping_generate_messages_check_deps_HectorIterData
@@ -56,3 +73,12 @@ c71974ee05823ffdb19619df79d95cd2 hector_slam/hector_nav_msgs/CMakeFiles/hector_n
 c71974ee05823ffdb19619df79d95cd2 hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_lisp
 c71974ee05823ffdb19619df79d95cd2 hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_nodejs
 c71974ee05823ffdb19619df79d95cd2 hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_generate_messages_py
+de27423438f663b181954274e7afff98 obstacle_detector/CMakeFiles/_obstacle_detector_generate_messages_check_deps_CircleObstacle
+31782a3ece6bfc420dd7c3030d77142a obstacle_detector/CMakeFiles/_obstacle_detector_generate_messages_check_deps_Obstacles
+2042c2c4833915f6bc71e019990ae698 obstacle_detector/CMakeFiles/_obstacle_detector_generate_messages_check_deps_SegmentObstacle
+45ab12a1abaceea787b347341c502b81 obstacle_detector/CMakeFiles/obstacle_detector_generate_messages_cpp
+45ab12a1abaceea787b347341c502b81 obstacle_detector/CMakeFiles/obstacle_detector_generate_messages_eus
+45ab12a1abaceea787b347341c502b81 obstacle_detector/CMakeFiles/obstacle_detector_generate_messages_lisp
+45ab12a1abaceea787b347341c502b81 obstacle_detector/CMakeFiles/obstacle_detector_generate_messages_nodejs
+45ab12a1abaceea787b347341c502b81 obstacle_detector/CMakeFiles/obstacle_detector_generate_messages_py
+692c5eeda6ec8ff1ddac43f02a3fe81d obstacle_detector/CMakeFiles/obstacle_detector_gui_automoc
