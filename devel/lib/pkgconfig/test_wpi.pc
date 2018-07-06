@@ -1,0 +1,8 @@
+prefix=/home/daichi/catkin_ws/devel
+
+Name: test_wpi
+Description: Description of test_wpi
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/daichi/catkin_ws/devel/lib 
+Requires: 
