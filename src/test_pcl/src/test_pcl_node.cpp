@@ -1,10 +1,17 @@
 #include "ros/ros.h"
 #include "sensor_msgs/LaserScan.h"
+#include <pigpiod_if2.h>
 
 #define RAD2DEG(x) ((x)*180./M_PI)
 
 float distance = 0;
 float angle;
+
+int pi;
+extern int pi;
+
+static int pwmpin[2] = {18, 19};
+static int dirpin[2] = {21, 20};
 
 void scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan)
 {
@@ -34,6 +41,12 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "rplidar_node_client");
     ros::NodeHandle n;
+    
+    pi = pigpio_start("localhost","8888");
+    set_mode(pi, pwmpin[0], PI_OUTPUT);
+    set_mode(pi, dirpin[0], PI_OUTPUT);
+    set_mode(pi, pwmpin[1], PI_OUTPUT);
+    set_mode(pi, dirpin[1], PI_OUTPUT);
 
     ros::Subscriber sub = n.subscribe<sensor_msgs::LaserScan>("/scan", 1000, scanCallback);
 

@@ -1011,19 +1011,6 @@ visualization_msgs_generate_messages_cpp/fast:
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named test_pcl_node
-
-# Build rule for target.
-test_pcl_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_pcl_node
-.PHONY : test_pcl_node
-
-# fast build rule for target.
-test_pcl_node/fast:
-	$(MAKE) -f test_pcl/CMakeFiles/test_pcl_node.dir/build.make test_pcl/CMakeFiles/test_pcl_node.dir/build
-.PHONY : test_pcl_node/fast
-
-#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -1033,7 +1020,7 @@ sensor_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f test_wpi/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make test_wpi/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_pcl/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make test_pcl/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1046,7 +1033,7 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f test_wpi/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make test_wpi/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_pcl/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make test_pcl/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1059,7 +1046,7 @@ sensor_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f test_wpi/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make test_wpi/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_pcl/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make test_pcl/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1072,7 +1059,7 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f test_wpi/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make test_wpi/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_pcl/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make test_pcl/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1085,8 +1072,21 @@ sensor_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f test_wpi/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make test_wpi/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_pcl/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make test_pcl/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named test_pcl_node
+
+# Build rule for target.
+test_pcl_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_pcl_node
+.PHONY : test_pcl_node
+
+# fast build rule for target.
+test_pcl_node/fast:
+	$(MAKE) -f test_pcl/CMakeFiles/test_pcl_node.dir/build.make test_pcl/CMakeFiles/test_pcl_node.dir/build
+.PHONY : test_pcl_node/fast
 
 #=============================================================================
 # Target rules for targets named test_wpi_node
@@ -2245,12 +2245,12 @@ help:
 	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... test_pcl_node"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... test_pcl_node"
 	@echo "... test_wpi_node"
 	@echo "... map_to_image_node"
 	@echo "... rplidarNode"

@@ -32,18 +32,3 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/daichi/catkin_ws/build/test_pcl/catkin_generated/installspace/test_pcl.pc")
-endif()
-
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test_pcl/cmake" TYPE FILE FILES
-    "/home/daichi/catkin_ws/build/test_pcl/catkin_generated/installspace/test_pclConfig.cmake"
-    "/home/daichi/catkin_ws/build/test_pcl/catkin_generated/installspace/test_pclConfig-version.cmake"
-    )
-endif()
-
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test_pcl" TYPE FILE FILES "/home/daichi/catkin_ws/src/test_pcl/package.xml")
-endif()
-

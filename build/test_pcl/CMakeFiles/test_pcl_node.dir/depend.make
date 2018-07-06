@@ -62,4 +62,6 @@ test_pcl/CMakeFiles/test_pcl_node.dir/src/test_pcl_node.cpp.o: /opt/ros/kinetic/
 test_pcl/CMakeFiles/test_pcl_node.dir/src/test_pcl_node.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 test_pcl/CMakeFiles/test_pcl_node.dir/src/test_pcl_node.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 test_pcl/CMakeFiles/test_pcl_node.dir/src/test_pcl_node.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
+test_pcl/CMakeFiles/test_pcl_node.dir/src/test_pcl_node.cpp.o: /usr/local/include/pigpio.h
+test_pcl/CMakeFiles/test_pcl_node.dir/src/test_pcl_node.cpp.o: /usr/local/include/pigpiod_if2.h
 
