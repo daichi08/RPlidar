@@ -1,0 +1,8 @@
+prefix=/home/daichi/catkin_ws/devel
+
+Name: test_gui
+Description: Description of test_gui
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/daichi/catkin_ws/devel/lib 
+Requires: 

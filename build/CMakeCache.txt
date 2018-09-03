@@ -1319,6 +1319,12 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
+gui_test_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/gui_test
+
+//Value Computed by CMake
+gui_test_SOURCE_DIR:STATIC=/home/daichi/catkin_ws/src/gui_test
+
+//Value Computed by CMake
 hector_compressed_map_transport_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/hector_slam/hector_compressed_map_transport
 
 //Value Computed by CMake
@@ -1416,6 +1422,12 @@ hector_trajectory_server_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/hector_s
 
 //Value Computed by CMake
 hector_trajectory_server_SOURCE_DIR:STATIC=/home/daichi/catkin_ws/src/hector_slam/hector_trajectory_server
+
+//Value Computed by CMake
+hello_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/hello
+
+//Value Computed by CMake
+hello_SOURCE_DIR:STATIC=/home/daichi/catkin_ws/src/hello
 
 //Value Computed by CMake
 hokuyo_node_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/hokuyo_node
@@ -1610,6 +1622,12 @@ rostest_DIR:PATH=/opt/ros/kinetic/share/rostest/cmake
 rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 
 //Value Computed by CMake
+rostime_test_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/rostime_test
+
+//Value Computed by CMake
+rostime_test_SOURCE_DIR:STATIC=/home/daichi/catkin_ws/src/rostime_test
+
+//Value Computed by CMake
 rplidar_ros_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/rplidar_ros
 
 //Value Computed by CMake
@@ -1640,6 +1658,12 @@ std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
 std_srvs_DIR:PATH=/opt/ros/kinetic/share/std_srvs/cmake
 
 //Value Computed by CMake
+test_gui_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/test_gui
+
+//Value Computed by CMake
+test_gui_SOURCE_DIR:STATIC=/home/daichi/catkin_ws/src/test_gui
+
+//Value Computed by CMake
 test_pcl_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/test_pcl
 
 //Value Computed by CMake
@@ -1668,6 +1692,12 @@ tf_DIR:PATH=/opt/ros/kinetic/share/tf/cmake
 
 //The directory containing a CMake configuration file for tf_conversions.
 tf_conversions_DIR:PATH=/opt/ros/kinetic/share/tf_conversions/cmake
+
+//Value Computed by CMake
+time_test_BINARY_DIR:STATIC=/home/daichi/catkin_ws/build/time_test
+
+//Value Computed by CMake
+time_test_SOURCE_DIR:STATIC=/home/daichi/catkin_ws/src/time_test
 
 //The directory containing a CMake configuration file for topic_tools.
 topic_tools_DIR:PATH=/opt/ros/kinetic/share/topic_tools/cmake
@@ -1851,7 +1881,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

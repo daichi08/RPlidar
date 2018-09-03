@@ -28,3 +28,11 @@ add_executable(${PROJECT_NAME}_node src/test_pcl_node.cpp)
 target_link_libraries(${PROJECT_NAME}_node
   ${catkin_LIBRARIES} pigpiod_if2
 )
+
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES test_pcl
+#  CATKIN_DEPENDS roscpp
+#  DEPENDS system_lib
+)
+

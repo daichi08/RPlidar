@@ -1011,6 +1011,19 @@ visualization_msgs_generate_messages_cpp/fast:
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named hello_node
+
+# Build rule for target.
+hello_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello_node
+.PHONY : hello_node
+
+# fast build rule for target.
+hello_node/fast:
+	$(MAKE) -f hello/CMakeFiles/hello_node.dir/build.make hello/CMakeFiles/hello_node.dir/build
+.PHONY : hello_node/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -2245,6 +2258,7 @@ help:
 	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... hello_node"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_nodejs"
